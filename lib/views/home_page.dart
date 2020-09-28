@@ -68,5 +68,21 @@ class _HomePageState extends State<HomePage> {
     }
   }
 
-  Future _dialogFlowRequest({String query})
+  Future _dialogFlowRequest({String query}) async {
+    //Código será adicionado aqui...
+  }
+
+  //Campo para escrever a mensagem 
+  Widget _buildTextField(){
+    return new Flexible(
+      child: new TextField(
+        controller: _controllerText,
+        decoration: new InputDecoration.collapsed(
+          hintText: "Enviar Mensagem"
+        ),
+      ),
+    );
+  }
+
+  //Botão para enviar mensagem
 }
